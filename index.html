@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://nxrcheats.github.io/aob/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AOB CONVERTER BY NAZMUL</title>
+<link href="./AOB CONVERTER BY NXR_files/css2" rel="stylesheet">
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+html, body {
+  min-height:100vh;
+  background: radial-gradient(circle, #000022, #000000);
+  font-family: 'Orbitron', sans-serif;
+  color:#00bbff;
+}
+
+
+.social-links {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+.social-links img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.social-links img:hover {
+  transform: scale(1.2);
+}
+.tiktok-logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.tiktok-logo:hover {
+  transform: scale(1.2);
+}
+
+
+#particles-js {position:fixed;width:100%;height:100%;z-index:0;}
+h1.top-name {color:#00bbff;text-shadow:0 0 10px #00bbff;font-size:50px;text-align:center;margin:20px 0;}
+.converter-select{text-align:center;margin-top:20px;position:relative;z-index:2;}
+.converter-select label{font-size:20px;font-weight:bold;color:#00bbff;margin-right:10px;text-shadow:0 0 8px #00bbff;}
+.converter-select select{padding:10px 70px;border:1px solid #00bbff;border-radius:8px;background:#000;color:#00bbff;font-size:16px;box-shadow:0 0 15px #00bbff;}
+.card{position:relative;z-index:2;max-width:1100px;margin:40px auto;background: radial-gradient(circle at center, #111133, #000022);border:2px solid #00bbff;border-radius:25px;padding:40px;text-align:center;box-shadow:0 0 20px #00bbff;backdrop-filter:blur(15px);}
+.card h1{font-size:30px;margin-bottom:20px;text-shadow:0 0 20px #00bbff;}
+.card input{width:100%;padding:16px;border:1px solid #00bbff;border-radius:10px;background:#000;color:#00bbff;font-size:18px;margin-bottom:15px;box-shadow:0 0 20px #00bbff;}
+.byte-count{font-size:18px;color:#00bbff;text-shadow:0 0 6px #00bbff;margin-bottom:15px;}
+pre{padding:16px;border:1px solid #00bbff;border-radius:10px;background:#000;color:#00bbff;font-size:16px;overflow-x:auto;white-space:pre-wrap;box-shadow:0 0 20px #00bbff;min-height:50px;}
+button.copy.bottom, button.delete.bottom{margin:15px 10px 0;display:inline-block;background:#00bbff;color:#000;border:none;border-radius:6px;font-weight:bold;cursor:pointer;box-shadow:0 0 10px #00bbff;padding:10px 40px;}
+button.copy.bottom:hover, button.delete.bottom:hover{background:#00aadd;}
+.footer{text-align:center;font-size:18px;color:#00bbff;text-shadow:0 0 10px #00bbff;margin:20px 0;}
+</style>
+</head>
+<body>
+<h1 class="top-name">DARK BANGLADESH</h1>
+
+<div class="converter-select">
+  <label for="conversionType">Select Conversion:</label>
+  <select id="conversionType">
+    <option value="cs-cpp">C# to C++</option>
+    <option value="cs-py">C# to Python</option>
+    <option value="cpp-cs">C++ to C#</option>
+    <option value="cpp-py">C++ to Python</option>
+    <option value="py-cs">Python to C#</option>
+    <option value="py-cpp">Python to C++</option>
+  </select>
+</div>
+
+<div id="particles-js"><canvas class="particles-js-canvas-el" width="1901" height="912" style="width: 100%; height: 100%;"></canvas></div>
+
+<!-- Cards -->
+<div class="card" id="cs-cpp" style="display: block;">
+  <h1>C# TO C++</h1>
+  <input type="text" placeholder="Paste AOB...">
+  <div class="byte-count">BYTE COUNT: 0</div>
+  <pre></pre>
+  <button class="copy bottom">COPY</button>
+  <button class="delete bottom">DELETE</button>
+</div>
+
+<div class="card" id="cs-py" style="display: none;">
+  <h1>C# TO PYTHON</h1>
+  <input type="text" placeholder="Paste AOB...">
+  <div class="byte-count">BYTE COUNT: 0</div>
+  <pre></pre>
+  <button class="copy bottom">COPY</button>
+  <button class="delete bottom">DELETE</button>
+</div>
+
+<div class="card" id="cpp-cs" style="display: none;">
+  <h1>C++ TO C#</h1>
+  <input type="text" placeholder="Paste AOB...">
+  <div class="byte-count">BYTE COUNT: 0</div>
+  <pre></pre>
+  <button class="copy bottom">COPY</button>
+  <button class="delete bottom">DELETE</button>
+</div>
+
+<div class="card" id="cpp-py" style="display: none;">
+  <h1>C++ TO PYTHON</h1>
+  <input type="text" placeholder="Paste AOB...">
+  <div class="byte-count">BYTE COUNT: 0</div>
+  <pre></pre>
+  <button class="copy bottom">COPY</button>
+  <button class="delete bottom">DELETE</button>
+</div>
+
+<div class="card" id="py-cs" style="display: none;">
+  <h1>PYTHON TO C#</h1>
+  <input type="text" placeholder="Paste AOB...">
+  <div class="byte-count">BYTE COUNT: 0</div>
+  <pre></pre>
+  <button class="copy bottom">COPY</button>
+  <button class="delete bottom">DELETE</button>
+</div>
+
+<div class="card" id="py-cpp" style="display: none;">
+  <h1>PYTHON TO C++</h1>
+  <input type="text" placeholder="Paste AOB...">
+  <div class="byte-count">BYTE COUNT: 0</div>
+  <pre></pre>
+  <button class="copy bottom">COPY</button>
+  <button class="delete bottom">DELETE</button>
+</div>
+
+
+
+<div class="footer">Developed by TAMIM</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  particlesJS('particles-js', {
+    "particles":{"number":{"value":80},"color":{"value":"#00bbff"},"opacity":{"value":0.5},"size":{"value":3},"line_linked":{"enable":false},"move":{"enable":true,"speed":2}},
+    "interactivity":{"events":{"resize":true}}, "retina_detect":true
+  });
+});
+
+// Converters
+function aobToCpp(aob) {
+  return aob.trim().split(/\s+/).map(p => p === "??" ? "'?'" : "0x" + p.toUpperCase()).join(", ");
+}
+function aobToPython(aob) {
+  return aob.trim().split(/\s+/).map(p => p === "??" ? "." : "\\x" + p.toUpperCase()).join("");
+}
+function cppToCs(aob) {
+  return aob.replace(/[{};]/g,"").split(/,|\s+/).filter(Boolean).map(p => {
+    p = p.replace(/0x/gi,"").trim();
+    return p === "??" || p === "'?'" ? "??" : p.toUpperCase();
+  }).join(" ");
+}
+function cppToPython(aob) {
+  return aob.replace(/[{};]/g,"").split(/,|\s+/).filter(Boolean).map(p => {
+    p = p.trim();
+    if(p === "??" || p === "'?'") return ".";
+    return "\\x" + p.replace(/0x/gi,"").toUpperCase();
+  }).join("");
+}
+function csToCpp(aob) { return " " + aobToCpp(aob) + " "; }
+function csToPython(aob) { return aobToPython(aob); }
+function pyToCs(aob) { return " " + aob.replace(/'/g,"").split(/\\x|(?=\.)/).filter(Boolean).map(p => p==="."?"??":p.toUpperCase()).join(" ") + " "; }
+function pyToCpp(aob) { return " " + aob.replace(/'/g,"").split(/\\x|(?=\.)/).filter(Boolean).map(p => p==="."?"'?'" : "0x"+p.toUpperCase()).join(", ") + " "; }
+
+// Link converters to UI
+document.querySelectorAll(".card").forEach(card=>{
+  const input = card.querySelector("input");
+  const pre = card.querySelector("pre");
+  const count = card.querySelector(".byte-count");
+  const copyBtn = card.querySelector("button.copy");
+  const deleteBtn = card.querySelector("button.delete");
+
+  input.addEventListener("input", ()=>{
+    const val = input.value.trim();
+    if(!val){ pre.textContent=""; count.textContent="BYTE COUNT: 0"; return; }
+    const bytesCount = val.split(/\s+/).filter(Boolean).length;
+    count.textContent = "BYTE COUNT: "+bytesCount;
+    let output="";
+    switch(card.id){
+      case "cs-cpp": output = csToCpp(val); break;
+      case "cs-py": output = csToPython(val); break;
+      case "cpp-cs": output = cppToCs(val); break;
+      case "cpp-py": output = cppToPython(val); break;
+      case "py-cs": output = pyToCs(val); break;
+      case "py-cpp": output = pyToCpp(val); break;
+    }
+    pre.textContent = output;
+  });
+
+  copyBtn.addEventListener("click", ()=>navigator.clipboard.writeText(pre.textContent));
+
+  deleteBtn.addEventListener("click", ()=>{
+    input.value = "";
+    pre.textContent = "";
+    count.textContent = "BYTE COUNT: 0";
+  });
+});
+
+// Dropdown
+const select = document.getElementById("conversionType");
+function showCard(id){ document.querySelectorAll(".card").forEach(c=>c.style.display="none"); document.getElementById(id).style.display="block"; }
+select.addEventListener("change", ()=>showCard(select.value));
+showCard(select.value);
+</script>
+
+
+
+</body></html>
